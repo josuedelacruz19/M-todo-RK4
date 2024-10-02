@@ -14,6 +14,7 @@ Genera el valor de la función $$ f(t, y) $$ para el sistema dado.
 - ndarray: Devuelve el resultado de la operación $$ -i[O, y(t)] $$.
 
 ### Ejemplo
+
 ```python
 oOper = np.array([[0, 1], [1, 0]])
 yInit = np.array([[1, 0], [0, 0]])
