@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reference-page-for-module-rk4" class="md-skip">
+        <a href="#referencia-de-funciones" class="md-skip">
           Skip to content
         </a>
       
@@ -223,6 +223,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Referencia
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -232,6 +243,94 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dyn_generatoroperador-init_state" class="md-nav__link">
+    <span class="md-ellipsis">
+      dyn_generator(operador, Init_state)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="dyn_generator(operador, Init_state)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retorno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RK4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4.dyn_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      dyn_generator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4.rk4" class="md-nav__link">
+    <span class="md-ellipsis">
+      rk4
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -257,6 +356,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dyn_generatoroperador-init_state" class="md-nav__link">
+    <span class="md-ellipsis">
+      dyn_generator(operador, Init_state)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="dyn_generator(operador, Init_state)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retorno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RK4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4.dyn_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      dyn_generator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#RK4.RK4.rk4" class="md-nav__link">
+    <span class="md-ellipsis">
+      rk4
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -270,26 +446,25 @@
                   
 
 
-<h1 id="reference-page-for-module-rk4">Reference page for module 'RK4'</h1>
-<p>```markdown</p>
 <h1 id="referencia-de-funciones">Referencia de Funciones</h1>
-<p>Esta sección detalla las funciones utilizadas en el documento. Las dos funciones principales son <code>dyn_generator()</code>y <code>rk4()</code>.</p>
-<h2 id="dyn_generatoro-y">dyn_generator(O, y)</h2>
-<p>Genera la dinámica del sistema.</p>
-<h3 id="parametros">Parámetros:</h3>
+<p>Esta sección detalla las funciones utilizadas en el documento. </p>
+<h2 id="dyn_generatoroperador-init_state"><code>dyn_generator(operador, Init_state)</code></h2>
+<p>Genera el valor de la función <span class="arithmatex">\( f(t, y) \)</span> para el sistema dado.</p>
+<h3 id="parametros">Parámetros</h3>
 <ul>
-<li><code>O</code> : Matriz de operación.</li>
-<li><code>y</code> : Estado actual del sistema.</li>
+<li><code>operador</code> (ndarray): Matriz de operación.</li>
+<li><code>Init_state</code> (ndarray): Estado inicial del sistema.</li>
 </ul>
-<h3 id="retorno">Retorno:</h3>
+<h3 id="retorno">Retorno</h3>
 <ul>
-<li>Devuelve el resultado de la multiplicación matricial entre <code>O</code> y <code>y</code>.</li>
+<li>ndarray: Devuelve el resultado de la operación <span class="arithmatex">\( -i[O, y(t)] \)</span>.</li>
 </ul>
-<h3 id="ejemplo-de-uso">Ejemplo de uso:</h3>
+<h3 id="ejemplo">Ejemplo</h3>
 <p>```python
-O = np.array([[0, -1j], [1j, 0]])
-y = np.array([1, 0])
-dyn_generator(O, y)</p>
+oOper = np.array([[0, 1], [1, 0]])
+yInit = np.array([[1, 0], [0, 0]])
+resultado = dyn_generator(oOper, yInit)
+print(resultado)</p>
 
 
 <div class="doc doc-object doc-module">
@@ -315,48 +490,35 @@ dyn_generator(O, y)</p>
 
 
 <h2 id="RK4.RK4.dyn_generator" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">dyn_generator</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">dyn_generator</span><span class="p">(</span><span class="n">operador</span><span class="p">,</span> <span class="n">Init_state</span><span class="p">)</span></code>
 
 </h2>
 
 
     <div class="doc doc-contents ">
 
-        <p>Genera la dinámica del sistema según la ecuación diferencial dada.</p>
-<p>La función calcula -i[O, y], donde O es una matriz de operación y y es el estado actual del sistema.</p>
-<p>Parámetros:</p>
-<hr />
-
-
-<details class="o-" open>
-  <summary>numpy.ndarray</summary>
-  <p>Matriz de operación.</p>
-</details>
-
-<details class="y-" open>
-  <summary>numpy.ndarray</summary>
-  <p>Estado actual del sistema.</p>
-</details>        <p>Retorno:</p>
-<hr />
-<p>numpy.ndarray
-    El resultado de la operación -i[O, y].</p>
-<p>Ejemplo de uso:</p>
-<hr />
+        <p>Genera el valor de la función f(t, y) para el sistema dado.</p>
+<p>Parámetros:
+- operador (ndarray): Matriz de operación.
+- Init_state (ndarray): Estado inicial del sistema.</p>
+<p>Retorno:
+- ndarray: Devuelve el resultado de la operación -i[O, y(t)].</p>
+<p>Ejemplo:</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>O = np.array([[0, -1j], [1j, 0]])
-y = np.array([1, 0])
-dyn_generator(O, y) array([0.-1.j, 0.+1.j])</p>
+<p>oOper = np.array([[0, 1], [1, 0]])
+yInit = np.array([[1, 0], [0, 0]])
+dyn_generator(oOper, yInit)
+array([[0.+0.j, 0.+1.j],
+       [0.+1.j, 0.+0.j]])</p>
 </blockquote>
 </blockquote>
 </blockquote>
 
             <details class="quote">
               <summary>Source code in <code>RK4/RK4.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
 <span class="normal"> 6</span>
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
@@ -375,9 +537,68 @@ dyn_generator(O, y) array([0.-1.j, 0.+1.j])</p>
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">dyn_generator</span><span class="p">(</span><span class="n">operador</span><span class="p">,</span> <span class="n">Init_state</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Genera el valor de la función f(t, y) para el sistema dado.</span>
+
+<span class="sd">    Parámetros:</span>
+<span class="sd">    - operador (ndarray): Matriz de operación.</span>
+<span class="sd">    - Init_state (ndarray): Estado inicial del sistema.</span>
+
+<span class="sd">    Retorno:</span>
+<span class="sd">    - ndarray: Devuelve el resultado de la operación -i[O, y(t)].</span>
+
+<span class="sd">    Ejemplo:</span>
+<span class="sd">    &gt;&gt;&gt; oOper = np.array([[0, 1], [1, 0]])</span>
+<span class="sd">    &gt;&gt;&gt; yInit = np.array([[1, 0], [0, 0]])</span>
+<span class="sd">    &gt;&gt;&gt; dyn_generator(oOper, yInit)</span>
+<span class="sd">    array([[0.+0.j, 0.+1.j],</span>
+<span class="sd">           [0.+1.j, 0.+0.j]])</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">iConst</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">operador</span><span class="p">,</span> <span class="n">Init_state</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Init_state</span><span class="p">,</span> <span class="n">operador</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="RK4.RK4.rk4" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">rk4</span><span class="p">(</span><span class="n">funcion</span><span class="p">,</span> <span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Implementa el método de Runge-Kutta de cuarto orden.</p>
+<p>Parámetros:
+- funcion (callable): La función que describe el sistema.
+- oper (ndarray): Matriz de operación.
+- state (ndarray): Estado actual del sistema.
+- h (float): Paso de tiempo.</p>
+<p>Retorno:
+- ndarray: Devuelve el nuevo estado del sistema tras aplicar el método RK4.</p>
+<p>Ejemplo:</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>oOper = np.array([[0, 1], [1, 0]])
+yInit = np.array([[1, 0], [0, 0]])
+h = 0.1
+rk4(dyn_generator, oOper, yInit, h)
+array([[0.99666369+0.j        , 0.09983333+0.1j        ],
+       [0.09983333+0.j        , 0.99666369+0.1j        ]])</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+            <details class="quote">
+              <summary>Source code in <code>RK4/RK4.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">26</span>
 <span class="normal">27</span>
 <span class="normal">28</span>
 <span class="normal">29</span>
@@ -389,94 +610,10 @@ dyn_generator(O, y) array([0.-1.j, 0.+1.j])</p>
 <span class="normal">35</span>
 <span class="normal">36</span>
 <span class="normal">37</span>
-<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">dyn_generator</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Genera la dinámica del sistema según la ecuación diferencial dada.</span>
-
-<span class="sd">    La función calcula -i[O, y], donde O es una matriz de operación y y es el estado actual del sistema.</span>
-
-<span class="sd">    Parámetros:</span>
-
-<span class="sd">    -----------</span>
-
-<span class="sd">    O : numpy.ndarray</span>
-<span class="sd">        Matriz de operación.</span>
-
-<span class="sd">    y : numpy.ndarray</span>
-<span class="sd">        Estado actual del sistema.</span>
-
-
-<span class="sd">    Retorno:</span>
-
-<span class="sd">    --------</span>
-
-<span class="sd">    numpy.ndarray</span>
-<span class="sd">        El resultado de la operación -i[O, y].</span>
-
-
-<span class="sd">    Ejemplo de uso:</span>
-
-<span class="sd">    ---------------</span>
-
-<span class="sd">    &gt;&gt;&gt; O = np.array([[0, -1j], [1j, 0]])</span>
-<span class="sd">    &gt;&gt;&gt; y = np.array([1, 0])</span>
-<span class="sd">    &gt;&gt;&gt; dyn_generator(O, y) array([0.-1.j, 0.+1.j])</span>
-
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h2 id="RK4.RK4.rk4" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">rk4</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span></code>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Método de Runge-Kutta de cuarto orden (RK4) para resolver una ecuación diferencial ordinaria (EDO).</p>
-<p>La función aproxima la solución de la EDO de la forma dy/dt = f(t, y) utilizando un paso temporal h.</p>
-<h4 id="RK4.RK4.rk4--parametros">Parámetros:</h4>
-
-
-<details class="state-" open>
-  <summary>numpy.ndarray</summary>
-  <p>El estado actual del sistema y.</p>
-</details>        <p>function : function
-           La función que describe la dinámica del sistema (es decir, dy/dt = f(t, y)).
-oper : float
-       t, el tiempo actual.
-h : float
-    El paso del tiempo.</p>
-<h4 id="RK4.RK4.rk4--retorno">Retorno:</h4>
-<p>numpy.ndarray 
-    El nuevo estado del sistema tras el paso de integración.</p>
-<h4 id="RK4.RK4.rk4--ejemplo-de-uso">Ejemplo de uso:</h4>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>O = np.array([[0, -1j], [1j, 0]])
-y0 = np.array([1, 0])
-f = lambda t, y: dyn_generator(O, y)
-t0 = 0
-h = 0.1
-rk4(y0, f, t0, h)
-array([0.99500417-0.09983342j, 0.09983342+0.99500417j])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-
-            <details class="quote">
-              <summary>Source code in <code>RK4/RK4.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">41</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
 <span class="normal">42</span>
 <span class="normal">43</span>
 <span class="normal">44</span>
@@ -487,216 +624,33 @@ array([0.99500417-0.09983342j, 0.09983342+0.99500417j])</p>
 <span class="normal">49</span>
 <span class="normal">50</span>
 <span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk4</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk4</span><span class="p">(</span><span class="n">funcion</span><span class="p">,</span> <span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-
-<span class="sd">    Método de Runge-Kutta de cuarto orden (RK4) para resolver una ecuación diferencial ordinaria (EDO).</span>
-
-<span class="sd">    La función aproxima la solución de la EDO de la forma dy/dt = f(t, y) utilizando un paso temporal h.</span>
+<span class="sd">    Implementa el método de Runge-Kutta de cuarto orden.</span>
 
 <span class="sd">    Parámetros:</span>
-<span class="sd">    ------------</span>
-
-<span class="sd">    state : numpy.ndarray </span>
-<span class="sd">            El estado actual del sistema y.</span>
-<span class="sd">    function : function</span>
-<span class="sd">               La función que describe la dinámica del sistema (es decir, dy/dt = f(t, y)).</span>
-<span class="sd">    oper : float</span>
-<span class="sd">           t, el tiempo actual.</span>
-<span class="sd">    h : float</span>
-<span class="sd">        El paso del tiempo.</span>
+<span class="sd">    - funcion (callable): La función que describe el sistema.</span>
+<span class="sd">    - oper (ndarray): Matriz de operación.</span>
+<span class="sd">    - state (ndarray): Estado actual del sistema.</span>
+<span class="sd">    - h (float): Paso de tiempo.</span>
 
 <span class="sd">    Retorno:</span>
-<span class="sd">    ---------</span>
+<span class="sd">    - ndarray: Devuelve el nuevo estado del sistema tras aplicar el método RK4.</span>
 
-<span class="sd">    numpy.ndarray </span>
-<span class="sd">        El nuevo estado del sistema tras el paso de integración.</span>
-
-<span class="sd">    Ejemplo de uso:</span>
-<span class="sd">    ----------------</span>
-
-<span class="sd">    &gt;&gt;&gt; O = np.array([[0, -1j], [1j, 0]])</span>
-<span class="sd">    &gt;&gt;&gt; y0 = np.array([1, 0])</span>
-<span class="sd">    &gt;&gt;&gt; f = lambda t, y: dyn_generator(O, y)</span>
-<span class="sd">    &gt;&gt;&gt; t0 = 0</span>
+<span class="sd">    Ejemplo:</span>
+<span class="sd">    &gt;&gt;&gt; oOper = np.array([[0, 1], [1, 0]])</span>
+<span class="sd">    &gt;&gt;&gt; yInit = np.array([[1, 0], [0, 0]])</span>
 <span class="sd">    &gt;&gt;&gt; h = 0.1</span>
-<span class="sd">    &gt;&gt;&gt; rk4(y0, f, t0, h)</span>
-<span class="sd">    array([0.99500417-0.09983342j, 0.09983342+0.99500417j])</span>
+<span class="sd">    &gt;&gt;&gt; rk4(dyn_generator, oOper, yInit, h)</span>
+<span class="sd">    array([[0.99666369+0.j        , 0.09983333+0.1j        ],</span>
+<span class="sd">           [0.09983333+0.j        , 0.99666369+0.1j        ]])</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">runge_k1</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
-    <span class="n">runge_k2</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="n">runge_k1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
-    <span class="n">runge_k3</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="n">runge_k2</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
-    <span class="n">runge_k4</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="n">runge_k3</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">runge_k1</span> <span class="o">+</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">runge_k2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">runge_k3</span><span class="p">)</span> <span class="o">+</span> <span class="n">runge_k4</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h2 id="RK4.RK4.simulate_dynamics" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">simulate_dynamics</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span></code>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Simula la dinámica temporal de un sistema utilizando el método RK4.</p>
-<h4 id="RK4.RK4.simulate_dynamics--parametros">Parámetros:</h4>
-<p>O : numpy.ndarray
-    Matriz de operación que define la dinámica del sistema.
-y0 : numpy.ndarray
-    Estado inicial del sistema.
-t_min : float
-    Tiempo inicial de la simulación.
-t_max : float
-    Tiempo final de la simulación.
-steps : int
-    Número de pasos de tiempo.</p>
-<h4 id="RK4.RK4.simulate_dynamics--retorno">Retorno:</h4>
-<p>times : numpy.ndarray
-    Arreglo con los tiempos simulados.
-stateQuant00 : numpy.ndarray
-    Arreglo con los valores de la entrada (0,0) del estado en cada paso de tiempo.
-stateQuant11 : numpy.ndarray
-    Arreglo con los valores de la entrada (1,1) del estado en cada paso de tiempo.</p>
-
-            <details class="quote">
-              <summary>Source code in <code>RK4/RK4.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">simulate_dynamics</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">steps</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Simula la dinámica temporal de un sistema utilizando el método RK4.</span>
-
-<span class="sd">    Parámetros:</span>
-<span class="sd">    -----------</span>
-<span class="sd">    O : numpy.ndarray</span>
-<span class="sd">        Matriz de operación que define la dinámica del sistema.</span>
-<span class="sd">    y0 : numpy.ndarray</span>
-<span class="sd">        Estado inicial del sistema.</span>
-<span class="sd">    t_min : float</span>
-<span class="sd">        Tiempo inicial de la simulación.</span>
-<span class="sd">    t_max : float</span>
-<span class="sd">        Tiempo final de la simulación.</span>
-<span class="sd">    steps : int</span>
-<span class="sd">        Número de pasos de tiempo.</span>
-
-<span class="sd">    Retorno:</span>
-<span class="sd">    --------</span>
-<span class="sd">    times : numpy.ndarray</span>
-<span class="sd">        Arreglo con los tiempos simulados.</span>
-<span class="sd">    stateQuant00 : numpy.ndarray</span>
-<span class="sd">        Arreglo con los valores de la entrada (0,0) del estado en cada paso de tiempo.</span>
-<span class="sd">    stateQuant11 : numpy.ndarray</span>
-<span class="sd">        Arreglo con los valores de la entrada (1,1) del estado en cada paso de tiempo.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># Crear un arreglo de tiempos</span>
-    <span class="n">times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
-    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">t_max</span> <span class="o">-</span> <span class="n">t_min</span><span class="p">)</span> <span class="o">/</span> <span class="n">steps</span>
-
-    <span class="c1"># Inicializar el estado y los arreglos para guardar las cantidades de interés</span>
-    <span class="n">yCopy</span> <span class="o">=</span> <span class="n">yInit</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-
-    <span class="n">stateQuant00</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">times</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-    <span class="n">stateQuant11</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">times</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-
-    <span class="c1"># Definir la función de dinámica</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">dyn_generator</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-
-    <span class="c1"># Iterar sobre los tiempos y aplicar RK4</span>
-    <span class="k">for</span> <span class="n">tt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">times</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-        <span class="c1"># Guardar los valores reales de las entradas (0,0) y (1,1) del estado</span>
-        <span class="n">stateQuant00</span><span class="p">[</span><span class="n">tt</span><span class="p">]</span> <span class="o">=</span> <span class="n">yCopy</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">real</span>
-        <span class="n">stateQuant11</span><span class="p">[</span><span class="n">tt</span><span class="p">]</span> <span class="o">=</span> <span class="n">yCopy</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">real</span>
-
-        <span class="c1"># Actualizar el estado usando el método RK4</span>
-        <span class="n">yN</span> <span class="o">=</span> <span class="n">rk4</span><span class="p">(</span><span class="n">yCopy</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">times</span><span class="p">[</span><span class="n">tt</span><span class="p">],</span> <span class="n">h</span><span class="p">)</span>
-        <span class="n">yCopy</span> <span class="o">=</span> <span class="n">yInit</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">yN</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">times</span><span class="p">,</span> <span class="n">stateQuant00</span><span class="p">,</span> <span class="n">stateQuant11</span>
+    <span class="n">runge_k1</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">funcion</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="n">runge_k2</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">funcion</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="n">runge_k1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">runge_k3</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">funcion</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="n">runge_k2</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">runge_k4</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">funcion</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span> <span class="o">+</span> <span class="n">runge_k3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">state</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">runge_k1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">runge_k2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">runge_k3</span> <span class="o">+</span> <span class="n">runge_k4</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -761,7 +715,9 @@ stateQuant11 : numpy.ndarray
     
       <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
