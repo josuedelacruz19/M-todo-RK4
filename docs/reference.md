@@ -19,7 +19,7 @@ oOper = np.array([[0, 1], [1, 0]])
 yInit = np.array([[1, 0], [0, 0]])
 resultado = dyn_generator(oOper, yInit)
 print(resultado)
-
+```
 
 
 ::: RK4.RK4
