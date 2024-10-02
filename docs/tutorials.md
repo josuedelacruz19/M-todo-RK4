@@ -1,30 +1,76 @@
-# Ejemplo de Uso
+# Tutorial: Uso del Método RK4
 
-En este tutorial, se ejemplifica como se implementa y ejecuta el método RK4 para resolver el problema dinámico especificado. Utilizamos un ejemplo específico donde \( f(t, y) = -i[O, y(t)] \) y generamos un gráfico para visualizar los resultados.
+En este tutorial, se mostrará cómo utilizar el método de Runge-Kutta de cuarto orden (RK4) para resolver un problema dinámico.
 
+## Paso 1: Importar Bibliotecas
+
+Primero, se importan las bibliotecas necesarias:
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
+```
 
-# Matriz de operación
-O = np.array([[0, -1j], [1j, 0]])
+## Paso 2: Definir Parámetros Iniciales
 
-# Estado inicial
-y0 = np.array([[1+0j, 0], [0, 0]])
 
-# Parámetros de tiempo
-t_min = 0
-t_max = 10
-steps = 100
+```python
+# Definimos el operador como una matriz
+oOper = np.array([[0, 1], [1, 0]])
 
-# Simulación
-times, stateQuant00, stateQuant11 = simulate_dynamics(O, y0, t_min, t_max, steps)
+# Estado inicial (ejemplo)
+yInit = np.array([[1, 0], [0, 0]])
 
-# Graficar resultados
-plt.plot(times, stateQuant00, label='Estado (0,0)')
-plt.plot(times, stateQuant11, label='Estado (1,1)')
+# Paso de tiempo
+h = 0.1
+
+# Tiempo total de simulación
+t_total = 10
+times = np.arange(0, t_total, h)
+
+# Inicializar el estado copia
+yCopy = yInit.copy()
+```
+
+## Paso 3: Crear Arreglos para Almacenar Resultados
+
+Inicializar arreglos para almacenar los resultados de las entradas (0,0) y (1,1):
+
+```python
+# Arreglos para almacenar los valores de las entradas (0,0) y (1,1)
+stateQuant00 = np.zeros(times.size)
+stateQuant11 = np.zeros(times.size)
+```
+
+## Paso 4: Bucle de Simulación
+
+Implementación  del bucle `for` para calcular la dinámica temporal utilizando el método RK4:
+
+```python
+for tt in range(times.size):
+    # Guardar el valor de las entradas (0,0) y (1,1) en los arreglos
+    stateQuant00[tt] = yCopy[0, 0].real
+    stateQuant11[tt] = yCopy[1, 1].real
+
+    # Invocar rk4 operando sobre yInit
+    yN = rk4(dyn_generator, oOper, yCopy, h)
+
+    # Ahora asignamos yN a yCopy para la próxima iteración
+    yCopy = yN
+```
+
+## Paso 5: Graficar Resultados
+
+Finalmente, se grafican los resultados almacenados en los arreglos:
+
+```python
+plt.figure(figsize=(10, 5))
+plt.plot(times, stateQuant00, label='Estado (0,0)', color='b')
+plt.plot(times, stateQuant11, label='Estado (1,1)', color='r')
+plt.title('Evolución de los Estados a lo largo del Tiempo')
 plt.xlabel('Tiempo')
-plt.ylabel('Valor real de las entradas')
+plt.ylabel('Valores de Estado')
 plt.legend()
+plt.grid()
 plt.show()
+```

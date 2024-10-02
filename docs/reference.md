@@ -1,26 +1,25 @@
-# Reference page for module 'RK4'
-
-```markdown
 # Referencia de Funciones
 
-Esta sección detalla las funciones utilizadas en el documento. Las dos funciones principales son `dyn_generator()`y `rk4()`.
+Esta sección detalla las funciones utilizadas en el documento. 
 
-## dyn_generator(O, y)
-Genera la dinámica del sistema.
+## `dyn_generator(operador, Init_state)`
 
-### Parámetros:
-- `O` : Matriz de operación.
-- `y` : Estado actual del sistema.
+Genera el valor de la función \( f(t, y) \) para el sistema dado.
 
-### Retorno:
-- Devuelve el resultado de la multiplicación matricial entre `O` y `y`.
+### Parámetros
+- `operador` (ndarray): Matriz de operación.
+- `Init_state` (ndarray): Estado inicial del sistema.
 
-### Ejemplo de uso:
+### Retorno
+- ndarray: Devuelve el resultado de la operación \( -i[O, y(t)] \).
 
+### Ejemplo
 ```python
-O = np.array([[0, -1j], [1j, 0]])
-y = np.array([1, 0])
-dyn_generator(O, y)
+oOper = np.array([[0, 1], [1, 0]])
+yInit = np.array([[1, 0], [0, 0]])
+resultado = dyn_generator(oOper, yInit)
+print(resultado)
+
 
 
 ::: RK4.RK4
