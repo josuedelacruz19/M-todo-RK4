@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ejemplo-de-uso" class="md-skip">
+        <a href="#tutorial-uso-del-metodo-rk4" class="md-skip">
           Skip to content
         </a>
       
@@ -205,6 +205,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -214,6 +225,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-importar-bibliotecas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 1: Importar Bibliotecas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-definir-parametros-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 2: Definir Parámetros Iniciales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-crear-arreglos-para-almacenar-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 3: Crear Arreglos para Almacenar Resultados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-4-bucle-de-simulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 4: Bucle de Simulación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-5-graficar-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 5: Graficar Resultados
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -259,6 +334,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-importar-bibliotecas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 1: Importar Bibliotecas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-definir-parametros-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 2: Definir Parámetros Iniciales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-crear-arreglos-para-almacenar-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 3: Crear Arreglos para Almacenar Resultados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-4-bucle-de-simulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 4: Bucle de Simulación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-5-graficar-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 5: Graficar Resultados
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -272,28 +400,61 @@
                   
 
 
-<h1 id="ejemplo-de-uso">Ejemplo de Uso</h1>
-<p>En este tutorial, se ejemplifica como se implementa y ejecuta el método RK4 para resolver el problema dinámico especificado. Utilizamos un ejemplo específico donde ( f(t, y) = -i[O, y(t)] ) y generamos un gráfico para visualizar los resultados.</p>
-<p>```python
-import numpy as np
-import matplotlib.pyplot as plt</p>
-<h1 id="matriz-de-operacion">Matriz de operación</h1>
-<p>O = np.array([[0, -1j], [1j, 0]])</p>
-<h1 id="estado-inicial">Estado inicial</h1>
-<p>y0 = np.array([[1+0j, 0], [0, 0]])</p>
-<h1 id="parametros-de-tiempo">Parámetros de tiempo</h1>
-<p>t_min = 0
-t_max = 10
-steps = 100</p>
-<h1 id="simulacion">Simulación</h1>
-<p>times, stateQuant00, stateQuant11 = simulate_dynamics(O, y0, t_min, t_max, steps)</p>
-<h1 id="graficar-resultados">Graficar resultados</h1>
-<p>plt.plot(times, stateQuant00, label='Estado (0,0)')
-plt.plot(times, stateQuant11, label='Estado (1,1)')
+<h1 id="tutorial-uso-del-metodo-rk4">Tutorial: Uso del Método RK4</h1>
+<p>En este tutorial, se mostrará cómo utilizar el método de Runge-Kutta de cuarto orden (RK4) para resolver un problema dinámico.</p>
+<h2 id="paso-1-importar-bibliotecas">Paso 1: Importar Bibliotecas</h2>
+<p>Primero, se importan las bibliotecas necesarias:</p>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+</code></pre>
+<h2 id="paso-2-definir-parametros-iniciales">Paso 2: Definir Parámetros Iniciales</h2>
+<pre><code class="language-python"># Definimos el operador como una matriz
+oOper = np.array([[0, 1], [1, 0]])
+
+# Estado inicial (ejemplo)
+yInit = np.array([[1, 0], [0, 0]])
+
+# Paso de tiempo
+h = 0.1
+
+# Tiempo total de simulación
+t_total = 10
+times = np.arange(0, t_total, h)
+
+# Inicializar el estado copia
+yCopy = yInit.copy()
+</code></pre>
+<h2 id="paso-3-crear-arreglos-para-almacenar-resultados">Paso 3: Crear Arreglos para Almacenar Resultados</h2>
+<p>Inicializar arreglos para almacenar los resultados de las entradas (0,0) y (1,1):</p>
+<pre><code class="language-python"># Arreglos para almacenar los valores de las entradas (0,0) y (1,1)
+stateQuant00 = np.zeros(times.size)
+stateQuant11 = np.zeros(times.size)
+</code></pre>
+<h2 id="paso-4-bucle-de-simulacion">Paso 4: Bucle de Simulación</h2>
+<p>Implementación  del bucle <code>for</code> para calcular la dinámica temporal utilizando el método RK4:</p>
+<pre><code class="language-python">for tt in range(times.size):
+    # Guardar el valor de las entradas (0,0) y (1,1) en los arreglos
+    stateQuant00[tt] = yCopy[0, 0].real
+    stateQuant11[tt] = yCopy[1, 1].real
+
+    # Invocar rk4 operando sobre yInit
+    yN = rk4(dyn_generator, oOper, yCopy, h)
+
+    # Ahora asignamos yN a yCopy para la próxima iteración
+    yCopy = yN
+</code></pre>
+<h2 id="paso-5-graficar-resultados">Paso 5: Graficar Resultados</h2>
+<p>Finalmente, se grafican los resultados almacenados en los arreglos:</p>
+<pre><code class="language-python">plt.figure(figsize=(10, 5))
+plt.plot(times, stateQuant00, label='Estado (0,0)', color='b')
+plt.plot(times, stateQuant11, label='Estado (1,1)', color='r')
+plt.title('Evolución de los Estados a lo largo del Tiempo')
 plt.xlabel('Tiempo')
-plt.ylabel('Valor real de las entradas')
+plt.ylabel('Valores de Estado')
 plt.legend()
-plt.show()</p>
+plt.grid()
+plt.show()
+</code></pre>
 
 
 
@@ -345,7 +506,9 @@ plt.show()</p>
     
       <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

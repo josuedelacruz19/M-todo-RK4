@@ -272,11 +272,11 @@
 
 <h1 id="introduccion-metodo-de-runge-kutta-de-cuarto-orden-rk4">Introducción: Método de Runge-Kutta de cuarto orden (RK4)</h1>
 <p>Este documento se centra en la resolución numérica de un problema dinámico utilizando el método Runge-Kutta de cuarto orden (RK4). Se busca resolver la ecuación diferencial ordinaria (EDO) de la forma:</p>
-<p>[
+<div class="arithmatex">\[
 \frac{dy}{dt} = f(t, y)
-]</p>
-<p>donde se tiene la siguiente condición inicial: ( y(t_{0}) = y_{0} ). Se utiliza la metodología RK4 debido a su precisión y estabilidad.</p>
-<p>En este ejemplo, se considera un problema específico en el cual ( f(t, y) = -i[O, y(t)] ), donde no hay dependencia temporal explícita en la función ( f(t, y) ).</p>
+\]</div>
+<p>donde se tiene la siguiente condición inicial: <span class="arithmatex">\( y(t_{0}) = y_{0} \)</span>. Se utiliza la metodología RK4 debido a su precisión y estabilidad.</p>
+<p>En este ejemplo, se considera un problema específico en el cual <span class="arithmatex">\( f(t, y) = -i[O, y(t)] \)</span>, donde no hay dependencia temporal explícita en la función <span class="arithmatex">\( f(t, y) \)</span>.</p>
 <p>El módulo se encuentra en:</p>
 <p><a href="https://github.com/josuedelacruz19/M-todo-RK4">github.com</a></p>
 
@@ -330,7 +330,9 @@
     
       <script src="assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
