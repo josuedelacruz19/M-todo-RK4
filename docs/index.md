@@ -6,9 +6,15 @@ $$
 \frac{dy}{dt} = f(t, y)
 $$
 
-donde se tiene la siguiente condición inicial: $$ y(t_{0}) = y_{0} $$. Se utiliza la metodología RK4 debido a su precisión y estabilidad.
+donde se tiene la siguiente condición inicial: $$ y(t_{0}) = y_{0} $$
 
-En este ejemplo, se considera un problema específico en el cual $$ f(t, y) = -i[O, y(t)] $$, donde no hay dependencia temporal explícita en la función $$ f(t, y) $$.
+ Se utiliza la metodología RK4 debido a su precisión y estabilidad.
+
+En este ejemplo, se considera un problema específico en el cual:
+
+ $$ f(t, y) = -i[O, y(t)] $$
+
+donde no hay dependencia temporal explícita en la función $$ f(t, y) $$.
  
 El módulo se encuentra en:
 
